@@ -40,7 +40,6 @@ function entrar() {
     const usuarioEncontrado = usuarios.find(user => user.nome === nomeInput && user.senha === senhaInput);
 
     if (usuarioEncontrado) {
-        // SUCESSO!
         usuarioLogado = usuarioEncontrado; 
         abrirBanco(); 
     } else {
