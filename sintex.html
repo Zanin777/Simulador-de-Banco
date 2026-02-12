@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="telaLogin">
+        <h2>🔒 Acesso ao Banco</h2>
+        
+        <input type="text" id="usuarioInput" placeholder="Usuário (ex: admin)">
+        <input type="password" id="senhaInput" placeholder="Senha">
+
+        <div class="visor-login" id="msgLogin">Entre ou cadastre-se</div>
+
+        <div class="grid-botoes">
+            <button class="btn-entrar" onclick="entrar()">Entrar</button>
+            <button class="btn-cadastrar" onclick="cadastrar()">Criar Conta</button>
+        </div>
+    </div>
+
+    <div class="container" id="telaBanco" style="display: none;">
+        <h2>🏦 Olá, <span id="nomeUsuario">Usuário</span>!</h2>
+        
+        <div class="visor" id="mensagem">Escolha uma opção.</div>
+
+        <input type="number" id="valorInput" placeholder="Digite o valor R$">
+
+        <div class="grid-botoes">
+            <button class="btn-depositar" onclick="depositar()">1. Depositar</button>
+            <button class="btn-sacar" onclick="sacar()">2. Sacar</button>
+            <button class="btn-saldo" onclick="verSaldo()">3. Ver Saldo</button>
+            <button class="btn-sair" onclick="logout()">4. Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    /* Animação suave ao aparecer */
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 { color: #2c3e50; margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
+}
+
+input:focus { border-color: #3498db; }
+
+/* Visores de mensagem */
+.visor, .visor-login {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.grid-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+
+/* Cores dos Botões */
+.btn-entrar { background-color: #2980b9; grid-column: span 1; }
+.btn-cadastrar { background-color: #8e44ad; grid-column: span 1; }
+
+.btn-depositar { background-color: #27ae60; }
+.btn-sacar { background-color: #c0392b; }
+.btn-saldo { background-color: #f39c12; }
+.btn-sair { background-color: #7f8c8d; }
