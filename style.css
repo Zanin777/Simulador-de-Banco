@@ -15,7 +15,6 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     text-align: center;
-    /* Animação suave ao aparecer */
     animation: fadeIn 0.5s;
 }
 
@@ -40,7 +39,6 @@ input {
 
 input:focus { border-color: #3498db; }
 
-/* Visores de mensagem */
 .visor, .visor-login {
     background-color: #f8f9fa;
     border: 1px solid #e9ecef;
@@ -70,7 +68,6 @@ button {
 
 button:hover { opacity: 0.9; }
 
-/* Cores dos Botões */
 .btn-entrar { background-color: #2980b9; grid-column: span 1; }
 .btn-cadastrar { background-color: #8e44ad; grid-column: span 1; }
 
